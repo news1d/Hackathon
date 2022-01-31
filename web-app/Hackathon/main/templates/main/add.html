@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Предложить идею{% endblock %}
+
+{% block content %}
+    <div class="add">
+        <h1>Предложить идею</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Введите идею" class="form-control">
+            <button class="btn btn-primary" type="submit">Отправить</button>
+        </form>
+    </div>
+{% endblock %}

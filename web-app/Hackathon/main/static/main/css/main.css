@@ -1,0 +1,55 @@
+body {
+    background: #3b3b3f;
+    color: #fff;
+}
+
+.main {
+    min-height: calc(100vh - 90px);
+}
+
+aside img {
+    display: block;
+    margin: 50px auto;
+    width: 500px;
+}
+
+
+
+
+
+main .features {
+    display: block;
+    margin: auto;
+    color: #fff;
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400 px; margin 20px auto; color: #b4b4bc;}
+.footer {
+    text-align: center;
+    color: #8c8c92;
+    height: 40px;
+}
+
+
+
+
+
+form {
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    margin-top: 50px;
+}
+
+main .add button {margin-top: 50px}
+main .add h1 {font-size: 50px;}
+main .add {
+    display: block;
+    margin: auto;
+    color: #fff;
+    margin-top: 140px;
+    text-align: center;
+}

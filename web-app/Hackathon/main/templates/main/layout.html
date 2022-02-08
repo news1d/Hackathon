@@ -14,7 +14,9 @@
 <body>
     <main class="main">
             <aside>
-                <a href="{%url 'home' %}"><img src="{% static 'main/img/hackathon.png' %}"></a>
+                <div class="container">
+                    <a href="{%url 'home' %}"><img src="{% static 'main/img/hackathon.png' %}"></a>
+                </div>
             </aside>
         {% block content %}
         {% endblock %}

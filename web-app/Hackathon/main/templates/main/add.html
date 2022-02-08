@@ -7,7 +7,7 @@
         <h1>Предложить идею</h1>
         <form method="post">
             {% csrf_token %}
-            <input type="text" placeholder="Введите идею" class="form-control">
+            <input type="text" name="idea" placeholder="Введите идею" class="form-control">
             <button class="btn btn-primary" type="submit">Отправить</button>
         </form>
     </div>

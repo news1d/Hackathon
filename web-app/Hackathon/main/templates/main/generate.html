@@ -3,8 +3,19 @@
 {% block title %}Сгенерировать идею{% endblock %}
 
 {% block content %}
-    <div class="features">
+    <div class="generate">
         <h1>Генератор идей</h1>
-        <button class="btn btn btn-success">Сгенерировать идею</button>
+        <form method="post">
+            {% csrf_token %}
+
+            <div class = "alert alert-success">
+                {% for el in gen_idea %}
+                <div class = "idea">
+                    <h5>{{ el.idea }}<h5>
+                </div>
+                {% endfor %}
+            </div>
+                <button class="btn btn btn-success" type="submit">Сгенерировать идею</button>
+        </form>
     </div>
 {% endblock %}
